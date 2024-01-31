@@ -1,0 +1,14 @@
+.active-nav-link {
+    background-color: rgb(163, 127, 245) !important;
+    color: aliceblue;
+    border: 2px solid rgb(41, 49, 58) !important;
+}
+
+.nav-link {
+    text-decoration: none;
+    background-color: rgb(148, 148, 223);
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid gray;
+    width: 6rem;
+}
