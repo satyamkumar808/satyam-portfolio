@@ -1,5 +1,5 @@
 .active-nav-link {
-    background-color: rgb(163, 127, 245) !important;
+    background-color: rgb(18 11 155 / 68%) !important;
     color: aliceblue;
     border: 2px solid rgb(41, 49, 58) !important;
 }
@@ -11,4 +11,5 @@
     border-radius: 5px;
     border: 2px solid gray;
     width: 6rem;
+    padding: 6px;
 }

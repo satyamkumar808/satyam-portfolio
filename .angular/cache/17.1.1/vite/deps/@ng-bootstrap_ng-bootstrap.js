@@ -10,7 +10,7 @@ import {
   getLocaleDayPeriods,
   getLocaleMonthNames,
   isPlatformBrowser
-} from "./chunk-UKCEOJAM.js";
+} from "./chunk-KSSMJRQ3.js";
 import {
   ApplicationRef,
   Attribute,

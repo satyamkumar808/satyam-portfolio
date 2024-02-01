@@ -1,55 +1,61 @@
 {
-  "hash": "de22a36a",
-  "configHash": "fd22e949",
+  "hash": "925e0aa9",
+  "configHash": "0105541d",
   "lockfileHash": "6181d66b",
-  "browserHash": "b0882b23",
+  "browserHash": "0c47e572",
   "optimized": {
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "a4a7007b",
+      "fileHash": "f4f68f17",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "88883887",
+      "fileHash": "4b4fabf6",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "872491e1",
+      "fileHash": "0ea1d7d8",
       "needsInterop": false
     },
     "@ng-bootstrap/ng-bootstrap": {
       "src": "../../../../../node_modules/@ng-bootstrap/ng-bootstrap/fesm2022/ng-bootstrap.mjs",
       "file": "@ng-bootstrap_ng-bootstrap.js",
-      "fileHash": "97a797d5",
+      "fileHash": "cff4975a",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "c34a31bb",
+      "fileHash": "3120bd91",
       "needsInterop": false
     },
     "rxjs": {
       "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
       "file": "rxjs.js",
-      "fileHash": "b1db1ea0",
+      "fileHash": "be0f0fec",
+      "needsInterop": false
+    },
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "c510d8b1",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-6Y3GY2C3": {
-      "file": "chunk-6Y3GY2C3.js"
+    "chunk-RCPAAAQT": {
+      "file": "chunk-RCPAAAQT.js"
     },
-    "chunk-P7S7YBSB": {
-      "file": "chunk-P7S7YBSB.js"
+    "chunk-4CIKH4BQ": {
+      "file": "chunk-4CIKH4BQ.js"
     },
-    "chunk-UKCEOJAM": {
-      "file": "chunk-UKCEOJAM.js"
+    "chunk-KSSMJRQ3": {
+      "file": "chunk-KSSMJRQ3.js"
     },
     "chunk-QGEYYCNG": {
       "file": "chunk-QGEYYCNG.js"

@@ -8,13 +8,15 @@ import { ProjectsComponent } from './projects/projects.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProjectsComponent,
-    NavBarComponent
+    NavBarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

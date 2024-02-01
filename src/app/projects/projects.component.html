@@ -1,1 +1,11 @@
-<p>projects works!</p>
+<div class="container-fluid d-flex justify-content-between flex-wrap" style="gap: 10px;">
+    <div *ngFor="let project of projects" class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">{{project.title}}</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">{{project.id}}</h6>
+            <p class="card-text">
+                {{project.body}}
+            <a href="#" class="card-link">Card link</a>
+        </div>
+    </div>
+</div>
