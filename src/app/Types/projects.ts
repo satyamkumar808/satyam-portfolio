@@ -1,6 +1,5 @@
 export interface Projects {
-    id: Number
-    title: String
-    body: String
-    userId: Number
+    projectId: Number;
+    name: String;
+    description: String;
 }

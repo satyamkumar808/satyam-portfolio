@@ -1,5 +1,16 @@
 <div class="container-fluid d-flex justify-content-center align-items-center">
-    <div class="w-75 h-50 border">
-
+    <div class="w-50 h-50 border p-5">
+        <form [formGroup] = "loginForm">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" formControlName="userEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword" class="form-label">Password</label>
+              <input type="password" formControlName="userPassword" class="form-control" id="exampleInputPassword">
+            </div>
+            <button type="submit" (click)="onLogin()" class="btn btn-primary">Submit</button>
+          </form>
     </div>
 </div>
