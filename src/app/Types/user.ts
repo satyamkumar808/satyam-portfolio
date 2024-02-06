@@ -3,9 +3,12 @@ export interface LoginUser {
     userPassword : String;
 }
 
-export interface User {
+export interface UserProfile {
     userId : number;
     userName : string;
-    userEmail: String;
+    userEmail: string;
+}
+
+export interface User extends UserProfile {
     tocken: string;
 }

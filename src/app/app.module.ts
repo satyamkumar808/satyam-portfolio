@@ -7,9 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { NavBarComponent } from './component/nav-bar/nav-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ProfileComponent } from './component/profile/profile/profile.component';
+import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { NotFoundComponent } from './component/not-found/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,16 +20,18 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     ProjectsComponent,
     NavBarComponent,
-    LoginComponent
+    LoginComponent,
+    ProfileComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
     HttpClientModule,
+    NgbModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi:true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

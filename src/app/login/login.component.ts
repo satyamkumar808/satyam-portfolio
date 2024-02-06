@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { LoginService } from '../services/login.service';
 import { LoginUser } from '../Types/user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,11 +11,11 @@ import { LoginUser } from '../Types/user';
 })
 export class LoginComponent {
 
-  constructor(private loginService: LoginService){}
+  constructor(private loginService: LoginService, private router: Router){}
 
   loginForm = new FormGroup({
-    userEmail : new FormControl<String>(''),
-    userPassword : new FormControl<String>('')
+    userEmail : new FormControl<String>('',[Validators.email, Validators.required]),
+    userPassword : new FormControl<String>('',[Validators.required])
   });
 
   onLogin(){
@@ -25,7 +26,8 @@ export class LoginComponent {
     this.loginService.login(loginUser).subscribe(
       user => {
         localStorage.setItem("Tocken", user.tocken);
-        localStorage.setItem("User", user.userName);
+        localStorage.setItem("User", user.userEmail);
+        this.router.navigate(['/home']);
       }
     )
   }

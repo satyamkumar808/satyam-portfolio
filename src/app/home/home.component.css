@@ -1,0 +1,63 @@
+.home-header {
+    background-image: url("../../assets/kevin-bhagat-zNRITe8NPqY-unsplash.jpg");
+    height: 85%;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 3px 4px rgba(16, 7, 7, 0.779);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    scale: 0.7;
+    overflow-x: hidden;
+    flex-direction: column;
+    opacity: 0.2;
+    animation: headerBackground ease-in 2s forwards;
+    
+}
+
+.header-text {
+    left: 902px;
+    animation: headerText ease-in 3s forwards;
+    position: relative;
+    opacity: 0.4;
+    
+}
+
+.skills-scroll {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    align-items: center;
+    flex-direction: row;
+    height: 4rem;
+    margin: 2rem;
+    justify-content: center;
+}
+
+.skills-scroll > * {
+    position: relative;
+    right: 70rem;
+    margin-inline: 2rem;
+    animation: skillScroll ease-in 3s forwards;
+}
+
+@keyframes skillScroll {
+    to {
+        transform: translateX(70rem);
+    }
+}
+
+@keyframes headerText {
+    to {
+        opacity: 1;
+        transform: translateX(-854px);
+    }
+}
+
+@keyframes headerBackground {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}

@@ -10,7 +10,7 @@
               <label for="exampleInputPassword" class="form-label">Password</label>
               <input type="password" formControlName="userPassword" class="form-control" id="exampleInputPassword">
             </div>
-            <button type="submit" (click)="onLogin()" class="btn btn-primary">Submit</button>
+            <button [disabled]="this.loginForm.invalid" type="submit" (click)="onLogin()" class="btn btn-primary">Submit</button>
           </form>
     </div>
 </div>
