@@ -3,6 +3,26 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: rgb(16, 14, 18);
-    color: azure;
+    color: rgb(55, 67, 67);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.glass-effect {
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.glass-effect-blue {
+    background: rgba( 9, 13, 19, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

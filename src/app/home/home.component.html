@@ -1,20 +1,12 @@
 <div class="vh-100 d-flex flex-column container-fluid w-100 home-container">
-    <div class="home-header d-flex">
+    <div class="home-header d-flex glass-effect">
         <div class="header-text">
             <h1>Hi !</h1>
             <h2>I am Satyam Tiwary a Full Stack Developer...</h2>
         </div>
     </div>
-    <div class="skills-scroll">
-        <div>skills</div>
-        <div>skills</div>
-        <div>skills</div>
-        <div>skills</div>
-        <div>skills</div>
-        <div>skills</div>
-        <div>skills</div>
-        <div>skills</div>
-        <div>skills</div>
-        <div>skills</div>
+    <div class="skills-scroll glass-effect-blue">
+        <app-skill-card *ngFor="let skill of skills" [skillName]="skill"></app-skill-card>
+        <!-- <app-skill-card [skillName]="skill"></app-skill-card> -->
     </div>
 </div>

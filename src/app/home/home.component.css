@@ -1,13 +1,10 @@
 .home-header {
-    background-image: url("../../assets/kevin-bhagat-zNRITe8NPqY-unsplash.jpg");
-    height: 85%;
+    height: 50%;
     overflow-y: hidden;
     justify-content: center;
     align-items: center;
     text-shadow: 1px 3px 4px rgba(16, 7, 7, 0.779);
     width: 100%;
-    background-size: cover;
-    background-position: center;
     scale: 0.7;
     overflow-x: hidden;
     flex-direction: column;
@@ -30,7 +27,7 @@
     overflow-x: hidden;
     align-items: center;
     flex-direction: row;
-    height: 4rem;
+    height: 6rem;
     margin: 2rem;
     justify-content: center;
 }

@@ -13,6 +13,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ProfileComponent } from './component/profile/profile/profile.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { NotFoundComponent } from './component/not-found/not-found/not-found.component';
+import { SkillCardComponent } from './component/skill-card/skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NotFoundComponent } from './component/not-found/not-found/not-found.com
     NavBarComponent,
     LoginComponent,
     ProfileComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SkillCardComponent
   ],
   imports: [
     BrowserModule,

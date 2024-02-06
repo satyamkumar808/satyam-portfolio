@@ -1,5 +1,9 @@
 .app-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../assets/pexels-codioful-\(formerly-gradienta\)-6985045.jpg");
 }
