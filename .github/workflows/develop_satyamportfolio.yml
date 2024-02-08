@@ -48,6 +48,11 @@ jobs:
         with:
           name: node-app
 
+      - name : echo path
+        run: |
+          dir /s
+          echo %CD%
+
       - name: Zip extract
         uses: hoatruongdev09/extract-zip@v1.2
         with:
