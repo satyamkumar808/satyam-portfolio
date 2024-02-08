@@ -48,11 +48,11 @@ jobs:
         with:
           name: node-app
 
-      - name : echo path
-        run: ls
-
       - name: unzip artifact for deployment
         run: unzip release.zip
+
+      - name : echo path
+        run: ls
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'satyamportfolio'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1DCC85BFDEF0424B99A3FFD4311B8D7B }}
-          package: ./dist/satyam-portfolio
+          package: satyam-portfolio/dist/satyam-portfolio
