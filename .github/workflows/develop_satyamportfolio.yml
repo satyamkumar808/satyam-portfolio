@@ -49,13 +49,10 @@ jobs:
           name: node-app
 
       - name : echo path
-        run: echo %CD%
+        run: ls
 
-      - name: Zip extract
-        uses: hoatruongdev09/extract-zip@v1.2
-        with:
-          input-path: /home/runner/work/satyam-portfolio/satyam-portfolio
-          output-path: /home/runner/work/satyam-portfolio/satyam-portfolio
+      - name: unzip artifact for deployment
+        run: unzip release.zip
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
