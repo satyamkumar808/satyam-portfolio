@@ -24,7 +24,7 @@ jobs:
       - name: npm install, build, and test
         run: |
           npm install
-          ng build --configuration=development
+          npm run buildDev
 
       - name: Zip artifact for deployment
         run: Compress-Archive . release.zip
