@@ -21,13 +21,15 @@
     
 }
 
+
 .skills-scroll {
     display: flex;
+    padding: 3px;
     flex-wrap: wrap;
     overflow-x: hidden;
     align-items: center;
     flex-direction: row;
-    height: 6rem;
+    height: fit-content;
     margin: 2rem;
     justify-content: center;
 }
@@ -49,6 +51,22 @@
     to {
         opacity: 1;
         transform: translateX(-854px);
+    }
+}
+
+@media (max-width: 450px){
+    h2 {
+        font-size: calc(1.325rem + .1vw);
+    }
+    .skills-scroll {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        height: fit-content;
+    }
+    .skills-scroll > * {
+        border-radius: 6px;
+        margin: 10px;
     }
 }
 
