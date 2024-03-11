@@ -1,5 +1,5 @@
 .home-header {
-    height: 50%;
+    height: 330px;
     overflow-y: hidden;
     justify-content: center;
     align-items: center;
@@ -21,6 +21,9 @@
     
 }
 
+.home-container {
+    min-height: 100vh !important;
+}
 
 .skills-scroll {
     display: flex;
@@ -68,6 +71,11 @@
         border-radius: 6px;
         margin: 10px;
     }
+}
+
+.about-section, .skill-section {
+    margin: 7px;
+    padding: 5px;;
 }
 
 .skill-span {
