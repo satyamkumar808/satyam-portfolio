@@ -70,6 +70,10 @@
     }
 }
 
+.skill-span {
+    margin-top: 3rem;
+}
+
 @keyframes headerBackground {
     to {
         scale: 1;

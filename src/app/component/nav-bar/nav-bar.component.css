@@ -15,3 +15,9 @@
 .nav-container {
     width: 99%;
 }
+
+@media (max-width: 450px){
+    .nav-middle-section {
+        width: 20% !important;
+    }
+}
