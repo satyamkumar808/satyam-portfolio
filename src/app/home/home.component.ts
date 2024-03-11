@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  skills : string[] = [".Net Core", "HTML", "CSS", "Javascript", "Typescript", "React JS", "Angular", ".Net Core Web API"]
+  skills : string[] = [".Net Core", "HTML", "CSS", "Javascript", "Typescript", "React JS", "Angular", ".Net Core Web API", "SQL", "Node js"]
 
 }
