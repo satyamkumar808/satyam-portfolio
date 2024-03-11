@@ -15,6 +15,7 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { NotFoundComponent } from './component/not-found/not-found/not-found.component';
 import { SkillCardComponent } from './component/skill-card/skill-card/skill-card.component';
 import { AboutComponent } from './component/about/about.component';
+import { ProjectCardComponent } from './component/project-card/project-card.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AboutComponent } from './component/about/about.component';
     ProfileComponent,
     NotFoundComponent,
     SkillCardComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,
