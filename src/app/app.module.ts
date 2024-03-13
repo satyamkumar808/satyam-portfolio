@@ -16,6 +16,8 @@ import { NotFoundComponent } from './component/not-found/not-found/not-found.com
 import { SkillCardComponent } from './component/skill-card/skill-card/skill-card.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProjectCardComponent } from './component/project-card/project-card.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { DashboardOptionComponent } from './component/dashboard-option/dashboard-option.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ProjectCardComponent } from './component/project-card/project-card.comp
     NotFoundComponent,
     SkillCardComponent,
     AboutComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    DashboardComponent,
+    DashboardOptionComponent
   ],
   imports: [
     BrowserModule,

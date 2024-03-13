@@ -28,8 +28,8 @@ export class UserService {
     )
   }
 
-  isLoggedIn():boolean {
-    const isAuthenticated : boolean = localStorage.getItem('Tocken') ?  true :  false;
-    return isAuthenticated;
+  isLoggedIn() :boolean {
+    return localStorage.getItem('Tocken') ?  true :  false;
   }
+
 }

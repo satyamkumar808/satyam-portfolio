@@ -1,6 +1,6 @@
 <nav class="nav-container d-flex justify-content-between m-2 flex-wrap">
     <div class="m-3">
-        <a class="nav-link" routerLink="/">
+        <a class="nav-link bg-dark text-light" routerLink="/">
             Logo
         </a>
     </div>
@@ -10,9 +10,14 @@
                 Home
             </a>
         </div>
-        <div>
+        <div class="me-3">
             <a class="nav-link" routerLink="/projects" routerLinkActive="active-nav-link">
                 Projects
+            </a>
+        </div>
+        <div class="me-3" *ngIf="local.getItem('User')">
+            <a class="nav-link" routerLink="/dashboard" routerLinkActive="active-nav-link">
+                Dashboard
             </a>
         </div>
     </div>

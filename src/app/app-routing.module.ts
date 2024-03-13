@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { ProfileComponent } from './component/profile/profile/profile.component';
 import { authGuard } from './guards/auth.guard';
 import { NotFoundComponent } from './component/not-found/not-found/not-found.component';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 const routes: Routes = [
   {path:"", pathMatch: "full" ,redirectTo:'home'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:"projects", pathMatch:"full", component:ProjectsComponent},
   {path:"login", pathMatch:"full", component:LoginComponent},
   {path:"profile", pathMatch:"full", component:ProfileComponent, canActivate:[authGuard]},
+  {path:"dashboard", pathMatch:"full", component: DashboardComponent, canActivate:[authGuard]},
   {path:"*", component:NotFoundComponent}
 ];
 
