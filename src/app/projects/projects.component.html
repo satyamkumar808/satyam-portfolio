@@ -1,4 +1,5 @@
-<div class="container-fluid d-flex justify-content-evenly flex-wrap" style="gap: 10px;">
+<div class="container-fluid d-flex justify-content-evenly flex-wrap projects-container">
+    <app-spinner *ngIf="loading" class="w-100 h-100 d-flex position-absolute top-0" [loading]="loading"></app-spinner>
     <div *ngFor="let project of projects" class="card bg-trans" style="width: 18rem;">
         <app-project-card [project]="project" ></app-project-card>
     </div>

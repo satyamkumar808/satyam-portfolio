@@ -1,3 +1,13 @@
 .bg-trans {
     background-color: transparent;
 }
+
+.projects-container {
+    gap: 10px;
+}
+
+@media(max-width: 450px) {
+    .projects-container {
+        gap: 45px;
+    }
+}

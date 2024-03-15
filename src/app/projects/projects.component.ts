@@ -9,13 +9,20 @@ import { Projects } from '../Types/projects';
 })
 export class ProjectsComponent implements OnInit {
 
+
+  loading :boolean = false;
+
   projects : Projects[] = [];
   constructor(private projectService: ProjectsService){
 
   }
 
   getProjects(){
-    this.projectService.getProjects().subscribe(projectArray => this.projects = projectArray);
+    this.loading = true;
+    this.projectService.getProjects().subscribe(projectArray => {
+      this.projects = projectArray
+      this.loading = false;
+    });
   }
 
   ngOnInit(): void {

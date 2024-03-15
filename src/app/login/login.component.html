@@ -1,4 +1,5 @@
 <div class="container-fluid d-flex justify-content-center align-items-center">
+    <app-spinner *ngIf="loading" class="w-100 h-100 d-flex position-absolute top-0" [loading]="loading"></app-spinner>
     <div class="w-50 h-50 p-5 glass-effect login-container">
         <form [formGroup] = "loginForm">
             <div class="mb-3">

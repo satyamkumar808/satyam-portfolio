@@ -9,5 +9,5 @@ import { Projects } from '../../Types/projects';
 export class ProjectCardComponent {
 
   @Input()
-  project: Projects = {projectId: 1, name: "", description: ""};
+  project: Projects = {projectId: 1, name: "", description: "", gitLink: ""};
 }

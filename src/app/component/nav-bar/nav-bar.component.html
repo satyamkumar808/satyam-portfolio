@@ -6,29 +6,29 @@
     </div>
     <div class="d-flex flex-row m-3 justify-content-center w-50 nav-middle-section">
         <div class="me-3">
-            <a class="nav-link" routerLink="/home" routerLinkActive="active-nav-link">
+            <a class="nav-link text-wrap text-break" routerLink="/home" routerLinkActive="active-nav-link">
                 Home
             </a>
         </div>
         <div class="me-3">
-            <a class="nav-link" routerLink="/projects" routerLinkActive="active-nav-link">
+            <a class="nav-link text-wrap text-break" routerLink="/projects" routerLinkActive="active-nav-link">
                 Projects
             </a>
         </div>
         <div class="me-3" *ngIf="local.getItem('User')">
-            <a class="nav-link" routerLink="/dashboard" routerLinkActive="active-nav-link">
+            <a class="nav-link text-wrap text-break" routerLink="/dashboard" routerLinkActive="active-nav-link">
                 Dashboard
             </a>
         </div>
     </div>
     <div class="m-3 d-flex flex-row justify-content-center w-25">
-        <a *ngIf="!local.getItem('User')" class="nav-link" routerLink="/login" routerLinkActive="active-nav-link">
+        <a *ngIf="!local.getItem('User')" class="nav-link text-wrap text-break" routerLink="/login" routerLinkActive="active-nav-link">
             Login
         </a>
-        <div (click)="onLogOut()" *ngIf="local.getItem('User')" class="nav-link">
+        <div (click)="onLogOut()" *ngIf="local.getItem('User')" class="nav-link text-wrap text-break">
             Logout
         </div>
-        <a *ngIf="local.getItem('User')" class="nav-link" routerLink="/profile" routerLinkActive="active-nav-link">
+        <a *ngIf="local.getItem('User')" class="nav-link text-wrap text-break flex-fill" routerLink="/profile" routerLinkActive="active-nav-link">
             {{local.getItem('User')}}
         </a>
     </div>

@@ -1,4 +1,14 @@
 .dashboard-option-card {
     min-width: 16.5rem;
     min-height: 12rem;
+    text-decoration: none;
+}
+
+@media(max-width: 500px) {
+    .dashboard-option-card {
+        min-width: 16.5rem;
+        min-height: 6rem;
+        font-size: smaller;
+        padding: 2px;
+    }
 }

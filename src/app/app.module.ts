@@ -16,8 +16,11 @@ import { NotFoundComponent } from './component/not-found/not-found/not-found.com
 import { SkillCardComponent } from './component/skill-card/skill-card/skill-card.component';
 import { AboutComponent } from './component/about/about.component';
 import { ProjectCardComponent } from './component/project-card/project-card.component';
-import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardOptionComponent } from './component/dashboard-option/dashboard-option.component';
+import { AddProjectComponent } from './component/add-project/add-project.component';
+import { DashboardHomeComponent } from './component/dashboard-home/dashboard-home.component';
+import { SpinnerComponent } from './component/spinner/spinner.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { DashboardOptionComponent } from './component/dashboard-option/dashboard
     AboutComponent,
     ProjectCardComponent,
     DashboardComponent,
-    DashboardOptionComponent
+    DashboardOptionComponent,
+    AddProjectComponent,
+    DashboardHomeComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

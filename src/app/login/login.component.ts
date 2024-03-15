@@ -13,12 +13,16 @@ export class LoginComponent {
 
   constructor(private loginService: LoginService, private router: Router){}
 
+
+  loading:boolean = false;
+
   loginForm = new FormGroup({
     userEmail : new FormControl<String>('',[Validators.email, Validators.required]),
     userPassword : new FormControl<String>('',[Validators.required])
   });
 
   onLogin(){
+    this.loading = true;
     let loginUser: LoginUser = {
       userEmail : this.loginForm.controls.userEmail.value ?? "",
       userPassword : this.loginForm.value.userPassword ?? ""
@@ -27,6 +31,7 @@ export class LoginComponent {
       user => {
         localStorage.setItem("Tocken", user.tocken);
         localStorage.setItem("User", user.userEmail);
+        this.loading = false;
         this.router.navigate(['/home']);
       }
     )
