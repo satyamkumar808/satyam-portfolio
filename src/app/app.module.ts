@@ -21,6 +21,7 @@ import { DashboardOptionComponent } from './component/dashboard-option/dashboard
 import { AddProjectComponent } from './component/add-project/add-project.component';
 import { DashboardHomeComponent } from './component/dashboard-home/dashboard-home.component';
 import { SpinnerComponent } from './component/spinner/spinner.component';
+import { ErrorPopupComponent } from './component/error-popup/error-popup.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SpinnerComponent } from './component/spinner/spinner.component';
     DashboardOptionComponent,
     AddProjectComponent,
     DashboardHomeComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    ErrorPopupComponent
   ],
   imports: [
     BrowserModule,

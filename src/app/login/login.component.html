@@ -1,17 +1,18 @@
 <div class="container-fluid d-flex justify-content-center align-items-center">
     <app-spinner *ngIf="loading" class="w-100 h-100 d-flex position-absolute top-0" [loading]="loading"></app-spinner>
+    <app-error-popup *ngIf="loginError" class="w-100 h-100 d-flex position-absolute top-0" errorMessage={{errorMessage}} (errorLogin)="onErrorOkClick($event)"></app-error-popup>
     <div class="w-50 h-50 p-5 glass-effect login-container">
-        <form [formGroup] = "loginForm">
-            <div class="mb-3">
+        <form [formGroup] = "loginForm" class="d-flex flex-column align-items-center">
+            <div class="mb-3 w-100">
               <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" formControlName="userEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <input type="email" formControlName="userEmail" class="form-control border-top-0 border-start-0 bg-transparent border-end-0 border-dark border-bottom border-2" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 w-100">
               <label for="exampleInputPassword" class="form-label">Password</label>
-              <input type="password" formControlName="userPassword" class="form-control" id="exampleInputPassword">
+              <input type="password" formControlName="userPassword" class="form-control border-top-0 border-start-0 bg-transparent border-end-0 border-dark border-bottom border-2" id="exampleInputPassword">
             </div>
-            <button [disabled]="this.loginForm.invalid" type="submit" (click)="onLogin()" class="btn btn-primary">Submit</button>
+            <button [disabled]="this.loginForm.invalid" type="submit" (click)="onLogin()" class="btn btn-dark rounded-pill w-25">Login</button>
           </form>
     </div>
 </div>
